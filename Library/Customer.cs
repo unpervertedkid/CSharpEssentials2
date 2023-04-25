@@ -1,6 +1,6 @@
 ﻿namespace Generics;
 
-public class Customer
+public class Customer: IComparable<Customer>
 {
     public int Id { get; set; }
     public string FirstName { get; set; }
@@ -12,5 +12,17 @@ public class Customer
     {
         return mapper.Map(this);
     }
-    
+
+    public int CompareTo(Customer? other)
+    {
+        if (other.Id > Id)
+        {
+            return -1;
+        }
+        else if (other.Id < Id)
+        {
+            return 1;
+        }
+        return 0;
+    }
 }
