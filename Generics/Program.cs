@@ -2,6 +2,8 @@
 
 CollectionSamples.QueueExample();
 CollectionSamples.StackExample();
+CollectionSamples.Indexing();
+CollectionSamples.Iterating();
 
 string[] names = new string[2];
 names[0] = "John";
