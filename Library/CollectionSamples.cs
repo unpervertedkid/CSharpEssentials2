@@ -90,6 +90,8 @@ public class CollectionSamples
             Console.WriteLine(current.FirstName);
         }
         
+        customerEnumerator.Dispose();
+        
         //Sort the customers
         Customers.Sort();
         
