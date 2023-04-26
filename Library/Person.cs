@@ -1,4 +1,4 @@
-﻿namespace Generics;
+﻿namespace Library;
 
 public class Person
 {

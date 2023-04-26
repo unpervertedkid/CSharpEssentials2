@@ -1,4 +1,9 @@
-﻿string[] names = new string[2];
+﻿using Library;
+
+CollectionSamples.QueueExample();
+CollectionSamples.StackExample();
+
+string[] names = new string[2];
 names[0] = "John";
 names[1] = "Mary";
 
